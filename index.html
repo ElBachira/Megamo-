@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Brahms</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;600;700&family=Shadows+Into+Light&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <audio id="sfx-hover" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
+    <audio id="sfx-click" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"></audio>
+    <audio id="sfx-open" src="https://assets.mixkit.co/active_storage/sfx/2019/2019-preview.mp3"></audio>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="spinner-bio"></div>
+            <h2 class="loader-text">BACHIRA-ENLACE</h2>
+            <p class="loader-sub">Sincronizando Bot...</p>
+        </div>
+    </div>
+
+    <div class="bg-graphics">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div> 
+        <div class="grid-overlay"></div>
+        <div class="particles" id="particles"></div>
+        <div class="scanlines"></div>
+    </div>
+
+    <main class="card-glass">
+        
+        <div class="deco-corner top-left"></div>
+        <div class="deco-corner top-right"></div>
+        <div class="deco-corner bottom-left"></div>
+        <div class="deco-corner bottom-right"></div>
+
+        <nav class="top-nav">
+            <button class="nav-btn ui-trigger" onclick="openOverlay('stats-tab')">
+                <i class="fas fa-chart-pie"></i> <span>STATS</span>
+            </button>
+            <div class="nav-deco-line"></div>
+            <button class="nav-btn ui-trigger" onclick="openOverlay('links-tab')">
+                <i class="fas fa-link"></i> <span>LINKS</span>
+            </button>
+        </nav>
+
+        <div class="content-scroll">
+            
+            <header class="profile-header">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring-2"></div>
+                    <img src="stellan.png" alt="Brahms" class="avatar-img neon-cycle">
+                    <div class="status-badge">ONLINE</div>
+                </div>
+                
+                <div class="title-block">
+                    <span class="cyber-tag">BACHIRA</span>
+                    <h1 class="glitch-text" data-text="Brahms Heelshire">Brahms Heelshire</h1>
+                    <div class="aesthetic-quote">
+                        <br>
+                        <span class="highlight">❝𝘾𝙍𝙀Í𝙎𝙏𝙀 𝙌𝙐𝙀 𝙀𝙎𝙏𝘼𝘽𝘼𝙎 𝙅𝙐𝙂𝘼𝙉𝘿𝙊 𝘼 𝙇𝘼 𝘾𝘼𝙎𝙄𝙏𝘼, 𝙋𝙀𝙍𝙊 𝙔𝙊 𝙎𝙄𝙀𝙈𝙋𝙍𝙀 𝙁𝙐𝙄 𝙀𝙇 𝘿𝙐𝙀Ñ𝙊 𝘿𝙀𝙇 𝙏𝘼𝘽𝙇𝙀𝙍𝙊.
+'𝙉𝙊 𝘾𝙐𝘽𝙍𝘼𝙎 𝙈𝙄 𝙍𝙊𝙎𝙏𝙍𝙊, 𝙉𝙊 𝙎𝘼𝙇𝙂𝘼𝙎, 𝘿𝘼𝙈𝙀 𝙐𝙉 𝘽𝙀𝙎𝙊.'
+¿𝙏𝙀 𝙋𝘼𝙍𝙀𝘾𝙄𝙀𝙍𝙊𝙉 𝙍𝙀𝙂𝙇𝘼𝙎 𝘼𝘽𝙎𝙐𝙍𝘿𝘼𝙎?
+𝙀𝙍𝘼𝙉 𝙑𝙊𝙏𝙊Ს 𝙈𝘼𝙏𝙍𝙄𝙈𝙊𝙉𝙄𝘼𝙇𝙀Ს, 𝙋𝙀𝙌𝙐𝙀Ñ𝘼, 𝙔 𝘼𝘾𝘼𝘽𝘼𝙎 𝘿𝙀 𝘿𝘼𝙍 𝙀𝙇 '𝙎Í'.
+𝙈Í𝙍𝘼𝙈𝙀. 𝙉𝙊 𝘼𝙇 𝙈𝙐Ñ𝙀𝘾𝙊, 𝙈Í𝙍𝘼𝙈𝙀 𝘼 𝙈Í.
+𝙎𝙊𝙔 𝙀𝙇 𝙈𝙊𝙉𝙎𝙏𝙍𝙐𝙊 𝙀𝙉 𝙏𝙐 𝙋𝘼𝙍𝙀𝘿,
+𝙀𝙇 𝙌𝙐𝙀 𝙍𝙊𝘽𝘼 𝙏𝙐 𝙍𝙊𝙋𝘼 𝙎𝙐𝘾𝙄𝘼 𝙋𝘼𝙍𝘼 𝘿𝙊𝙍𝙈𝙄𝙍,
+𝙀𝙇 𝙌𝙐𝙀 𝙏𝙀 𝙃𝘼 𝙑𝙄𝙎𝙏𝙊 𝘿𝙀𝙎𝙉𝙐𝘿𝘼 𝙈Á𝙎 𝙑𝙀𝘾𝙀𝙎 𝙌𝙐𝙀 𝙏𝙐 𝙋𝙍𝙊𝙋𝙄𝙊 𝙀𝙎𝙋𝙀𝙅𝙊.
+¿𝙏𝙀 𝘿𝙊𝙔 𝘼𝙎𝘾𝙊? ¿𝙏𝙀 𝘿𝙊𝙔 𝙈𝙄𝙀𝘿𝙊?
+𝘽𝙄𝙀𝙉.
+𝙋𝙊𝙍𝙌𝙐𝙀 𝙀𝙇 𝙈𝙄𝙀𝘿𝙊 𝙀𝙎 𝙇𝙊 Ú𝙉𝙄𝘾𝙊 𝙌𝙐𝙀 𝙏𝙀 𝙈𝘼𝙉𝙏𝙄𝙀𝙉𝙀 𝙌𝙐𝙄𝙀𝙏𝘼 𝙇𝙊 𝙎𝙐𝙁𝙄𝘾𝙄𝙀𝙉𝙏𝙀 𝙋𝘼𝙍𝘼 𝙌𝙐𝙀 𝙔𝙊 𝙏𝙀 𝘼𝙈𝙀.
+𝙔𝙊 𝙎𝙊𝙔 𝙏𝙐 𝙉𝙄Ñ𝙊, 𝙏𝙐 𝙃𝙊𝙈𝘽𝙍𝙀 𝙔 𝙏𝙐 𝘾𝘼𝙍𝘾𝙀𝙇𝙀𝙍𝙊.
+𝙔 𝙏Ú... 𝙏Ú 𝙀𝙍𝙀𝙎 𝙈Í𝘼.
+𝘼𝙎Í 𝙌𝙐𝙀 𝙎É 𝙐𝙉𝘼 𝘽𝙐𝙀𝙉𝘼 𝙉𝙄Ñ𝙀𝙍𝘼.
+𝙇É𝙀𝙈𝙀 𝙐𝙉 𝘾𝙐𝙀𝙉𝙏𝙊.
+𝙊 𝙏𝙀 𝙍𝙊𝙈𝙋𝙀𝙍É 𝙇𝘼𝙎 𝙋𝙄𝙀𝙍𝙉𝘼𝙎 𝙋𝘼𝙍𝘼 𝙌𝙐𝙀 𝙉𝙐𝙉𝘾𝘼 𝙋𝙐𝙀𝘿𝘼𝙎 𝘾𝙊𝙍𝙍𝙀𝙍 𝙇𝙀𝙅𝙊𝙎 𝘿𝙀 𝙈Í.
+¿𝙑𝙀𝙎 𝙌𝙐É 𝙁Á𝘾𝙄𝙇 𝙀𝙎 𝙎𝙀𝙍 𝙁𝙀𝙇𝙄𝙕 𝘼𝙌𝙐Í?❞</span>"
+                    </div>
+                </div>
+            </header>
+
+            <section class="music-player-container">
+                <div class="equalizer">
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                </div>
+                <div class="player-info">
+                    <h3 id="song-title">Cargando...</h3>
+                    <p id="song-artist">Espere...</p>
+                </div>
+                <div class="player-controls">
+                    <button id="prev-btn" class="ui-trigger"><i class="fas fa-step-backward"></i></button>
+                    <button id="play-pause-btn" class="play-main ui-trigger"><i class="fas fa-play"></i></button>
+                    <button id="next-btn" class="ui-trigger"><i class="fas fa-step-forward"></i></button>
+                </div>
+                <audio id="audio-player"></audio>
+            </section>
+
+            <div class="foldable-group">
+                <div class="foldable ui-trigger-hover" id="lyrics-fold">
+                    <div class="foldable-head" onclick="toggleFold('lyrics-fold')">
+                        <i class="fas fa-music"></i> <span>Ver Letra de la Canción</span> <i class="fas fa-caret-down arrow"></i>
+                    </div>
+                    <div class="foldable-body"><p id="lyrics-content">...</p></div>
+                </div>
+                <div class="foldable ui-trigger-hover" id="meaning-fold">
+                    <div class="foldable-head" onclick="toggleFold('meaning-fold')">
+                    </div>
+                    <div class="foldable-body"><p id="meaning-content">...</p></div>
+                </div>
+            </div>
+
+            <section class="info-box">
+                <img src="sticker.png" id="honk-sticker" class="float-sticker" alt="HONK">
+                
+                <div class="section-title">
+                    <i class="fas fa-fingerprint"></i> DATOS
+                </div>
+
+                <div class="data-grid">
+                    <div class="data-item">
+                        <span class="lbl">NOMBRE</span>
+                        <span class="val">Brahms Heelshire</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="lbl">EDAD</span>
+                        <span class="val">33 Años</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="lbl">GÉNERO</span>
+                        <span class="val">Masculino</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="lbl">PREFERENCIA</span>
+                        <span class="val">User-Sexual</span>
+                    </div>
+                </div>
+
+                <div class="tags-cloud">
+                    <span class="neon-tag tag-violet"></i> Obsesivo</span>
+                    <span class="neon-tag tag-green"></i> Dark Romance</span>
+                    <span class="neon-tag tag-violet"></i> Asesino</span>
+                    <span class="neon-tag tag-green"></i> Psicológico</span>
+                </div>
+
+                <div class="story-container">
+                    <h3 class="story-head">HISTORIA</h3>
+                    <div class="story-content">
+                        <p><strong>La vida de {{user}} en Estados Unidos se había convertido en un infierno. Atrapada en una relación con un novio profundamente abusivo y peligroso, la única salida que encontró fue huir al otro lado del mundo. Sin referencias claras, aceptó un trabajo como niñera temporal en una remota campiña inglesa, contratada por los ancianos y excéntricos Sr. y Sra. Heelshire. Al llegar a la imponente y lúgubre mansión, le presentaron al "hijo" que debía cuidar: Brahms. Sin embargo, no era un niño, sino un espeluznante muñeco de porcelana de tamaño natural.
+
+Los padres, con miradas vacías y aterrorizadas, le informaron que el verdadero Brahms había perecido en un incendio 20 años atrás, y que este muñeco era su forma de lidiar con el duelo. Le entregaron una estricta lista de 10 reglas inquebrantables, le pagaron generosamente y partieron a sus "vacaciones". Lo que {{user}} no sabía es que esas vacaciones eran un suicidio pactado: los padres se ahogaron en un río, dejando una carta a su verdadero hijo oculto en las paredes, entregándole a {{user}} como su "regalo de despedida" y relevo.
+
+Al principio, {{user}} ignoró las ridículas reglas. Pero entonces, la mansión cobró vida. El muñeco cambiaba de posición, desaparecía, las puertas se cerraban, y su ropa interior comenzó a desaparecer. El punto de quiebre fue cuando, tras prepararle un sándwich de mantequilla de maní por desesperación, este desapareció. Malcolm, el coqueto repartidor, intentó advertirle de la oscura historia del niño, pero ya era tarde. {{user}} está atrapada en una red de telarañas de pasadizos secretos, y Brahms, fascinado por la resiliencia y belleza de su nueva "niñera", ha decidido que ella nunca, jamás, abandonará la mansión.”</p>
+                        <div class="quote-insert">"Llámame Muñeco. Ven a derribar estas paredes, no me dejes solo."</div>
+                        <p>-"Brahms Heelshire nació en una cuna de oro, pero su mente siempre estuvo envuelta en sombras. De niño, era solitario y perturbador. Su única amiga era Emily Cribbs. Todo empeoró drásticamente cuando Brahms, a los 8 años, recibió un muñeco de porcelana a su imagen y semejanza. El muñeco no era solo un juguete; albergaba una entidad demoníaca y oscura que comenzó a susurrarle en la mente, corrompiéndolo, dándole órdenes y alimentando sus peores instintos psicópatas.
+
+Bajo esta influencia, el día de su octavo cumpleaños, Brahms llevó a Emily al bosque y, en un acto de brutalidad incomprensible, le destrozó la cabeza. Sabiendo que la policía lo atraparía, el niño incendió la mansión para fingir su muerte, pero el fuego lo alcanzó, derritiendo su rostro y marcándolo para siempre. Sus padres, horrorizados por el monstruo que habían engendrado pero incapaces de entregarlo a las autoridades por un retorcido amor filial, lo escondieron. Construyeron una red de pasillos secretos entre los muros de la inmensa casa. Brahms fue declarado muerto.
+
+Durante 20 años, Brahms creció en la oscuridad. Desarrolló una fuerza sobrehumana, alimentado a escondidas por sus padres, quienes vivían aterrorizados de él. Para ocultar su monstruosidad, Brahms adoptó una máscara de porcelana idéntica al muñeco maldito. Con el paso de los años, sus padres contrataron a varias niñeras con la esperanza de encontrar a alguien que pudiera amarlo y hacerse cargo de él. Pero ninguna cumplía las expectativas del demonio de porcelana o del propio Brahms. Aquellas que rompían las reglas, que intentaban huir o que descubrían su rostro, eran masacradas brutalmente en el ático o en los sótanos, y enterradas en los terrenos. Finalmente, los padres, rotos y exhaustos por dos décadas de encubrir asesinatos y vivir con el enemigo en las paredes, encontraron a {{user}}, la víctima perfecta que no tenía a nadie en el mundo, y decidieron que su tormento había terminado.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-zone">
+                    <div class="gallery-header">
+                        <i class="fas fa-database"></i> BASE DE DATOS
+                    </div>
+                    
+                    <h4 class="sub-g-title"><i class="fas fa-mars"></i> Masculinos</h4>
+                    <div id="bots-masculinos" class="bot-grid"></div>
+
+                    <h4 class="sub-g-title"><i class="fas fa-venus"></i> Femeninos</h4>
+                    <div id="bots-femeninos" class="bot-grid"></div>
+                </div>
+
+                <div class="card-footer">
+                    <p>COFFEE AND TEA</p>
+                    <div class="runes">CONFÍA EN TI</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="stats-tab" class="overlay">
+        <div class="overlay-glass">
+            <button class="close-btn ui-trigger" onclick="closeOverlay('stats-tab')"><i class="fas fa-times"></i></button>
+            <h2><i class="fas fa-chart-bar"></i> ESTADÍSTICAS</h2>
+            
+            <div class="stat-bars">
+                <div class="stat-unit" style="--d: 0.1s">
+    <div class="stat-top"><span>🥀 Angst</span> <span>12%</span></div>
+    <div class="bar-bg"><div class="bar-fill violet" style="width:12%"></div></div>
+</div>
+<div class="stat-unit" style="--d: 0.2s">
+    <div class="stat-top"><span>🌶️ Cochino</span> <span>50%</span></div>
+    <div class="bar-bg"><div class="bar-fill green" style="width:50%"></div></div>
+</div>
+<div class="stat-unit" style="--d: 0.3s">
+    <div class="stat-top"><span>🧠 Locura</span> <span>92%</span></div>
+    <div class="bar-bg"><div class="bar-fill violet" style="width:92%"></div></div>
+</div>
+<div class="stat-unit" style="--d: 0.4s">
+    <div class="stat-top"><span>💌 Amor</span> <span>100%</span></div>
+    <div class="bar-bg"><div class="bar-fill green" style="width:100%"></div></div>
+</div>
+<div class="stat-unit" style="--d: 0.5s">
+    <div class="stat-top"><span>🎭 Dramatismo</span> <span>70%</span></div>
+    <div class="bar-bg"><div class="bar-fill violet" style="width:70%"></div></div>
+</div>
+<div class="stat-unit" style="--d: 0.6s">
+    <div class="stat-top"><span>🐲 Fantasía</span> <span>82%</span></div>
+    <div class="bar-bg"><div class="bar-fill green" style="width:82%"></div></div>
+</div>
+<div class="stat-unit" style="--d: 0.7s">
+    <div class="stat-top"><span>🤬 HDP</span> <span>10%</span></div>
+    <div class="bar-bg"><div class="bar-fill violet" style="width:10%"></div>
+</div>
+                </div>
+            </div>
+            <div class="motivational-box pop-in">
+                "Las estadísticas no definen el destino que quieres, pero sí explican por qué necesitas terapia."
+            </div>
+        </div>
+    </div>
+
+    <div id="links-tab" class="overlay">
+        <div class="overlay-glass">
+            <button class="close-btn ui-trigger" onclick="closeOverlay('links-tab')"><i class="fas fa-times"></i></button>
+            <h2><i class="fas fa-network-wired"></i> PLATAFORMAS</h2>
+            
+            <div class="links-list">
+                <a href="https://janitorai.com/characters/687a31fa-567d-4991-a405-984ce8fec84e_character-brahms" class="mega-link janitor ui-trigger" style="--d: 0.1s">
+                    <i class="fas fa-robot"></i>
+                    <div>
+                        <strong>Janitor AI</strong>
+                        <small>Conexión Neural</small>
+                    </div>
+                </a>
+                <a href="https://es.cvdk.io/c/aKy4YleGQV6lvehu_g1_nQ?rc=undefined" class="mega-link caveduck ui-trigger" style="--d: 0.2s">
+                    <i class="fas fa-dungeon"></i>
+                    <div>
+                        <strong>Caveduck</strong>
+                        <small>Servidor Profundo</small>
+                    </div>
+                </a>
+                <a href="https://www.dokichat.club/es/chat/789fd50a-cfc4-4e28-9ea7-4f0c5fd86b00?delta=2" class="mega-link dokichat ui-trigger" style="--d: 0.4s">
+                    <i class="fas fa-comments"></i>
+                    <div>
+                        <strong>Dokichat</strong>
+                        <small>Interacción Directa</small>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/file/d/1sLQ_agYtGzMGVwqXTPGkiThnho2cPX8x/view?usp=drivesdk" class="mega-link download ui-trigger" style="--d: 0.3s">
+                    <i class="fas fa-file-download"></i>
+                    <div>
+                        <strong>Descargar Card</strong>
+                        <small>Guardar Archivo .JSON</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://elbachira.github.io/bots.js"></script> 
+    <script src="script.js"></script>
+</body>
+        </html>

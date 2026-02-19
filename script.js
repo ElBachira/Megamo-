@@ -41,54 +41,61 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 2. SISTEMA DE REPRODUCTOR DE MÚSICA ---
     const songs = [
         {
-            title: "Babydoll",
-            artist: "Ari Abdul",
+            title: "Supermassive Black Hole",
+            artist: "Muse",
             src: "song.mp3", 
-            lyrics: `Cielo, me hundo
-Jodida por ti
-Muérdeme, márcame
-Déjame así
-Cielo, te llamo
-Ponme en mi ataúd
-*(En mi ataúd)*
+            lyrics: `Ooh nena, ¿no sabes que sufro?
+Ooh nena, ¿puedes oírme gemir?
+Me atrapaste bajo falsas apariencias
+¿Cuánto falta para que me dejes ir?
 
-Dime "muñeca"
-Rompe estas puertas
-No me dejes sola
-Dime "muñeca"
-Qué frío, es abstinencia
-Esto no es un hogar
+Ooh
+Enciendes mi alma
+Ooh
+Enciendes mi alma
 
-Oh, Padre, perdona
-Todo mi pecar
-Si miro sus ojos
-Gana Satanás
-Ciega de mentiras
-Pero sé jugar
-*(Sé jugar)*
+Glaciares derritiéndose en plena noche (ooh)
+Y las superestrellas succionadas hacia el supermasivo (enciendes mi alma)
+Glaciares derritiéndose en plena noche
+Y las superestrellas succionadas hacia el (enciendes mi alma)
+(Hacia el supermasivo)
 
-Dime "muñeca"
-Rompe estas puertas
-No me dejes sola
-Dime "muñeca"
-Qué frío, es abstinencia
-Esto no es un hogar
+Pensé que no era el tonto de nadie
+Ooh nena, soy un tonto por ti
+Eres la reina de lo superficial
+¿Y cuánto pasará antes de que digas la verdad?
 
-Me tienes a tu antojo
-Deseo tu lengua en mi piel
-Dame tu calor
-Para aguantar
-Me tienes contra el suelo
-Grito y no hay consuelo
-Nada que tocar
-Manos atadas
+Ooh
+Enciendes mi alma
+Ooh
+Enciendes mi alma
 
-Dime "muñeca"
-Rompe estas puertas
-No me dejes sola
-Dime "muñeca"
-Qué frío, es abstinencia
-Esto no es un hogar`,
+Glaciares derritiéndose en plena noche (ooh)
+Y las superestrellas succionadas hacia el supermasivo (enciendes mi alma)
+Glaciares derritiéndose en plena noche
+Y las superestrellas succionadas hacia el (enciendes mi alma)
+(Hacia el supermasivo)
+
+Agujero negro supermasivo
+Agujero negro supermasivo
+Agujero negro supermasivo
+Agujero negro supermasivo
+
+Glaciares derritiéndose en plena noche
+Y las superestrellas succionadas hacia el supermasivo
+Glaciares derritiéndose en plena noche
+Y las superestrellas succionadas hacia el supermasivo
+
+Glaciares derritiéndose en plena noche (ooh)
+Y las superestrellas succionadas hacia el supermasivo (enciendes mi alma)
+Glaciares derritiéndose en plena noche
+Y las superestrellas succionadas hacia el (enciendes mi alma)
+(Hacia el supermasivo)
+
+Agujero negro supermasivo
+Agujero negro supermasivo
+Agujero negro supermasivo
+Agujero negro supermasivo`,
         }
     ];
 
